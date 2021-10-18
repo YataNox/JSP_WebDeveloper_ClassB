@@ -9,10 +9,12 @@
 	<body>
 		<!-- 하나의 작업 단위(회원가입, 로그인, 게시물 등록 등)를 구성하기 위해 사용되는 입력란,
 		선택란들은 작업 단위별로 아래와 같이 form 태그안에 넣어서 사용합니다. -->
-		<form name = "reg_frm" action="03_Action_to.jsp" method="get">
-			<!-- name : 스크립트에서 다른 것들과 구분하여 명명하기 위한 이름으로 사용
-				   action : 입력란 선택란에 입력하고 선택한 내용이 전달될 대상 파일
-				   method : 전달 방식을 의미하며 get은 일반전송방식, post는 비공개 전달 방식 사용 -->
+		<form name = "reg_frm" action="03_Action_to.jsp" method="post">
+			<!-- 
+				name : 스크립트에서 다른 것들과 구분하여 명명하기 위한 이름으로 사용
+				action : 입력란 선택란에 입력하고 선택한 내용이 전달될 대상 파일
+				method : 전달 방식을 의미하며 get은 일반전송방식, post는 비공개 전달 방식 사용
+			 -->
 			<label for="name">이름</label><span style="color:red">*</span>
 			<input type = "text" id="name" name = "name" value=""><br>
 			<label for="id">아이디</label><span style="color:red">*</span>
