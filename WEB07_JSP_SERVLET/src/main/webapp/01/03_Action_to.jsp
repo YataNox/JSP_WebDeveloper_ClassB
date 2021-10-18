@@ -33,10 +33,17 @@
 			String id = request.getParameter("id");
 			String pwd = request.getParameter("pwd");
 			String pwd_re = request.getParameter("pwd_re");
+			String useritem = request.getParameter("useritem");
 		%>
 		성명 : <%=name %><br>
 		아이디 : <%=id %><br>
 		비밀번호 : <%=pwd %><br>
 		비밀번호 확인 : <%=pwd_re %><br>
+		
+		사용자 아이템 : <%=useritem %><br>
+		<!-- request 객체 : 서버에 저장된 내용을 요청하여 전달 받을 때 사용하는 객체로서 form 태그에서
+		전달된 내용은 서버에 일단 저장되고, 이후 aciton에 의해 대상이 되는 페이지에서 위와 같은 명령으로
+		필요한 내용을 요청 & 추출하여 사용합니다.
+		request.getParameter("name"); "name" : 전달 값의 name -->
 	</body>
 </html>

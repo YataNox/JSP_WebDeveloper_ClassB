@@ -25,5 +25,7 @@
 			<input type = "password" id="pwd_re" name = "pwd_re" value=""><br>
 			<input type = "submit" value="회원가입">
 		</form>
+		
+		<a href="03_Action_to.jsp?useritem=superCar">유저아이템만 보내기</a>
 	</body>
 </html>
