@@ -27,7 +27,7 @@
 		
 		<!-- form 태그 안에서 submit 버튼을 이용하는 것이 아니라
 		필요에 따라 일반 버튼 클릭으로 이동할 때, 이동주소에 전달 값을 붙여서 이동시키기도 합니다.
-		http://주소/경로/파일이름.jsp?전달name1=전달값&전달name2=전달값2.. -->
+		링크도리 주소 - http://주소/경로/파일이름.jsp?전달name1=전달값&전달name2=전달값2.. -->
 		<%
 			String name = request.getParameter("name");
 			String id = request.getParameter("id");
