@@ -10,6 +10,7 @@
 		<form method="get" action="05_Select_to.jsp">
 			<label for="job">직업</label>
 			<select id="job" name="job" size="1">
+				<option value="">선택하세요</option>
 				<option value="학생">학생</option>
 				<option value="컴퓨터/인터넷">컴퓨터/인터넷</option>
 				<option value="언론">언론</option>
