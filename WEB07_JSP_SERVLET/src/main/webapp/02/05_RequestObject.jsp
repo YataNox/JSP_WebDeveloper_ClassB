@@ -7,6 +7,14 @@
 		<title>05_RequestObject</title>
 	</head>
 	<body>
-		
+		<!-- Request : 주로 서버에서 정보를 요청할 때 사용하는 객체이며, 객체의 각 정보들을
+		이용하여 사이트에 유용한 설정 및 실행에 이용합니다. -->
+		<!-- request 객체가 담고 있는 정보들 -->
+		컨택스트 패스 : <%= request.getContextPath() %><br>
+		요청방식 : <%= request.getMethod() %><br>
+		요청한 URL : <%= request.getMethod() %><br>
+		요청한 URI : <%= request.getRequestURL() %><br>
+		서버의 이름 : <%= request.getRequestURI() %><br>
+		프로토콜 : <%= request.getProtocol() %><br>
 	</body>
 </html>
