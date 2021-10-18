@@ -7,10 +7,10 @@
 		<meta charset="UTF-8">
 		<title>Calendar</title>
 		<style>
-			td:first-child(7){
+			tr td:first-child{
 				color : blue;
 			}
-			td:last-child(1){
+			tr td:last-child{
 				color : red;
 			}
 		</style>
