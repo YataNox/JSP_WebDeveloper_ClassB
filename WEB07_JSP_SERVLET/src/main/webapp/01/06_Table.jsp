@@ -43,8 +43,29 @@
 				<td>5행 3열</td>
 				<td>5행 4열</td>
 				<td>5행 5열</td>
-			</tr>
-		
+			</tr>		
 		</table>
+		
+		<br><br><br>
+		
+		<table	cellspacing="1" bgcolor="black" width="500">
+			<%
+			for(int i = 1; i <=5; i++){
+			%>
+				<tr bgcolor="white" height="80">
+					<%
+					for(int j=1; j<=5; j++){
+					%>
+						<td><%=i%>행 <%=j%>열</td>
+					<%
+					}
+					%>
+				</tr>
+			<%
+			}
+			%>
+		</table>
+		
+		
 	</body>
 </html>
