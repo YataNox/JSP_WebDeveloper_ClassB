@@ -7,10 +7,10 @@
 		<meta charset="UTF-8">
 		<title>Calendar</title>
 		<style>
-			td:nth-child(7){
+			td:first-child(7){
 				color : blue;
 			}
-			td:nth-child(1){
+			td:last-child(1){
 				color : red;
 			}
 		</style>
@@ -34,6 +34,7 @@
 		int i, k, cnt=0; // i는 반복실행에 사용, k는 날짜 출력에 사용, cnt는 줄바꿈에 사용
 		
 		%>
+		<h1><%=sYear%>년 <%=sMonth+1%>월</h1>
 		<table width="560" align="left" cellspacing="1" bgcolor="black">
 			<tr bgcolor="white" height="50">
 				<td align = "center" width = "80">일</td>
