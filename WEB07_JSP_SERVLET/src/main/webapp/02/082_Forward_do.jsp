@@ -4,6 +4,7 @@
 <%
 String sAge = request.getParameter("age");
 int age = Integer.parseInt(sAge);
+String abc = request.getParameter("abc");
 
 if(age<=19){
 %>
