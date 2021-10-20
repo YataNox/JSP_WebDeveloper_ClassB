@@ -10,7 +10,9 @@
 	<body>
 		<h3>관리자로 로그인 성공</h3>
 		<%
-		String userName = URLDecoder.decode(request.getParameter("userName"), "UTF-8");
+		// String userName = URLDecoder.decode(request.getParameter("userName"), "UTF-8");
+		// String userName = (String)request.getAttribute("userName");
+		String userName = URLDecoder.decode(request.getParameter("userName"),"UTF-8");
 		out.print(userName);
 		%>
 		(<%=request.getParameter("userID") %>)님 환영합니다.
