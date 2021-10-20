@@ -22,7 +22,7 @@
 			else{
 				for(String item : items){
 		%>			
-					<%=item %>,	
+					<%=item %>
 		<% 
 				}
 			}
@@ -35,7 +35,7 @@
 			else{
 				for(String interest : interests){
 		%>			
-					<%=interest %>,	
+					<%=interest %>
 		<% 
 				}
 			}
