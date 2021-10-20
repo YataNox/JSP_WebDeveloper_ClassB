@@ -53,7 +53,19 @@ public class Join_Servlet extends HttpServlet {
 			request.setAttribute("chk_mail", "거부");
 		}
 		request.setAttribute("content", content);
-		request.setAttribute("item", items);
+		
+		String [] sitem = new String[items.length];
+		for(int i =0; i < sitem.length; i++) {
+			switch(items[i]) {
+				case "1": sitem[i] = "신발"; break;
+				case "2": sitem[i] = "가방"; break;
+				case "3": sitem[i] = "벨트"; break;
+				case "4": sitem[i] = "모자"; break;
+				case "5": sitem[i] = "시계"; break;
+				case "6": sitem[i] = "쥬얼리"; break;
+			}
+		}
+		request.setAttribute("item", sitem);
 		request.setAttribute("job", job);
 		request.setAttribute("interest", interests);
 		

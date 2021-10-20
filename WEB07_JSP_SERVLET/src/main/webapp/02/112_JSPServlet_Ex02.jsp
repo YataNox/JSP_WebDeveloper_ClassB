@@ -8,28 +8,8 @@
 	</head>
 	<body>
 		<%
-		String items[] = request.getParameterValues("item");
-		if(items != null){
-			for(int i = 0; i < items.length; i++) {
-				switch(items[i].toString()) {
-					case "1":
-						items[i] = "신발"; break;
-					case "2":
-						items[i] = "가방"; break;
-					case "3":
-						items[i] = "벨트"; break;
-					case "4":
-						items[i] = "모자"; break;
-					case "5":
-						items[i] = "시계"; break;
-					case "6":
-						items[i] = "쥬얼리"; break;
-					default :
-						items = null; break;
-				}
-			}	
-		}
-		String interests[] = request.getParameterValues("interest");
+		String items[] = (String[]) request.getAttribute("item");
+		String interests[] = (String []) request.getAttribute("interest");
 		%>
 		<h1>아이디 : <%=request.getAttribute("id")%></h1>
 		<h1>암 &nbsp; 호 : <%=request.getAttribute("pwd")%></h1>
