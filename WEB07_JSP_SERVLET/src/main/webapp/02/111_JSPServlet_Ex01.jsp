@@ -5,6 +5,11 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>111_JSPServlet_Ex01</title>
+		<style>
+		input[type="text"]:focus, input[type="password"]:focus{
+			background-color:#eeeeff;
+		}
+		</style>
 	</head>
 	<body>
 		<form method="post" action="../Join_Servlet">
