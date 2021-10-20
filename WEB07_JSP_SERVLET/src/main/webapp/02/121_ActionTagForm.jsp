@@ -7,6 +7,12 @@
 		<title>121_ActionTagForm</title>
 	</head>
 	<body>
-		
+		<form action="122_ActionTag_do.jsp">
+			아이디 : <input type="text" name="userID"><br>
+			암 &nbsp; 호 : <input type="password" name="userPWD"><br>
+			<input type="radio" name="loginCheck" value="user" checked="checked">사용자
+			<input type="radio" name="loginCheck" value="manager">관리자<br>
+			<input type="submit" value="로그인">
+		</form>
 	</body>
 </html>
