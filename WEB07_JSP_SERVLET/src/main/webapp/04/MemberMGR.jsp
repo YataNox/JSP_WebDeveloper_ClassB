@@ -29,6 +29,7 @@
 				<th>아이디</th>
 				<th>암호</th>
 				<th>전화번호</th>
+				<th>삭제</th>
 			</tr>
 			<%
 			try{
@@ -46,7 +47,8 @@
 							+ rs.getString("id") + "</a></td>");
 					out.println("<td>" + rs.getString("pwd") + "</td>");
 					out.println("<td>" + rs.getString("phone") + "</td>");
-					
+					out.println("<td align='center'><a href='deleteMember.jsp?userid=" + rs.getString("id") + "'>"
+							+ "삭제" + "</a></td>");
 					
 					out.println("</tr>");
 				}
