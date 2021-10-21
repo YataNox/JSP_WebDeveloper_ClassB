@@ -67,5 +67,6 @@
 			}
 			%>
 		</table>
+		<a href="addMemberForm.jsp">멤버 추가</a>
 	</body>
 </html>
