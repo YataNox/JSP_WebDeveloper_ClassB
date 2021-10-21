@@ -8,7 +8,7 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>MemberMFR.jsp</title>
+		<title>MemberMGR.jsp</title>
 		<%!
 		Connection con = null;
 		PreparedStatement pstmt = null;
