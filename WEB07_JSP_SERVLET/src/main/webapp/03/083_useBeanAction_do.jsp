@@ -13,12 +13,12 @@ String email = request.getParameter("email");
 <jsp:useBean id="member" class="com.ezen.dto.MemberBean" scope="request"/>
 
 <!-- 전달된 파라미터로 멤버 변수들 변경 -->
-<jsp:setProperty name="member" property="name" value='<%=name %>'/>
-<jsp:setProperty name="member" property="userid" value='<%=id %>'/>
-<jsp:setProperty name="member" property="pwd" value='<%=pwd %>'/>
-<jsp:setProperty name="member" property="nickname" value='<%=nickname %>'/>
-<jsp:setProperty name="member" property="phone" value='<%=phone %>'/>
-<jsp:setProperty name="member" property="email" value='<%=email %>'/>
+<jsp:setProperty name="member" property="name" value="<%=name %>"/>
+<jsp:setProperty name="member" property="userid" value="<%=id %>"/>
+<jsp:setProperty name="member" property="pwd" value="<%=pwd %>"/>
+<jsp:setProperty name="member" property="nickname" value="<%=nickname %>"/>
+<jsp:setProperty name="member" property="phone" value="<%=phone %>"/>
+<jsp:setProperty name="member" property="email" value="<%=email %>"/>
 
 <%
 RequestDispatcher dp = request.getRequestDispatcher("084_userBeanAction.jsp");
