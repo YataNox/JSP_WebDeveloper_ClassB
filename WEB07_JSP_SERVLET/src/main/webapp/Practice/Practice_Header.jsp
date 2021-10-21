@@ -3,7 +3,7 @@
 <header>
 	<h1><a href="Before_Login_Main.jsp" target="_self">Practice Web Page</a></h1>
 	<div id="loginform">
-		<form method="post" action="../Practice_Servlet">
+		<form method="post" action="Chk_Btn.jsp">
 			<table>
 				<tr>
 					<td><label for="userid">아이디 : </label></td>
