@@ -42,7 +42,8 @@
 					
 					
 					out.println("<td>" + rs.getString("name") + "</td>");
-					out.println("<td>" + rs.getString("id") + "</td>");
+					out.println("<td><a href='editMemberForm.jsp?userid=" + rs.getString("id") + "'>"
+							+ rs.getString("id") + "</a></td>");
 					out.println("<td>" + rs.getString("pwd") + "</td>");
 					out.println("<td>" + rs.getString("phone") + "</td>");
 					
