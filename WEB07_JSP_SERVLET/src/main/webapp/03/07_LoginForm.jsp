@@ -7,7 +7,7 @@
 		<title>07_LoginForm</title>
 	</head>
 	<body>
-		<form method="post" action="062_Login_do.jsp">
+		<form method="post" action="072_Login_do.jsp">
 			<label for="userid">아이디 : </label>
 			<input type="text" name="id" id="userid"><br>
 			<label for="userid">암 &nbsp; 호 : </label>
