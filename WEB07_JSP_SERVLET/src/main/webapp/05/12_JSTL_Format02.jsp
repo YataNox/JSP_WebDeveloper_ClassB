@@ -17,7 +17,10 @@
 			<fmt:formatNumber value="10000" type="currency"></fmt:formatNumber><br>
 			숫자(number) :
 			<fmt:formatNumber value="1000.1234" type="number"
-			maxFractionDigits="3"></fmt:formatNumber>
+			maxFractionDigits="3"></fmt:formatNumber><br>
+			<!-- maxFractionDigits : 소수점 자리수 -->
+			<c:set var="now" value="<%=new java.util.Date()%>"></c:set>
+			날짜 : <fmt:formatDate value="${now}"></fmt:formatDate>
 		</h3>
 	</body>
 </html>
