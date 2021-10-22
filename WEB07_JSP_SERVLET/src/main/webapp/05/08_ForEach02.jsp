@@ -47,5 +47,21 @@
 		 ${status.first} : 현재 루프가 처음이면 true 리턴
 		 ${status.last} : 현재 루프가 마지막이면 true 리턴
 		  -->
+		  
+		  <!-- 마지막 아이테만 빼고 각 아이템 사이에 (,)컴마를 찍어 출력하고 싶을 때 -->
+		  <c:forEach var="movie" items="${movieList}" varStatus="status">
+		  	<%-- ${movie} --%> ${status.current}
+		  	<c:if test="${not status.last}"></c:if> 
+		  </c:forEach>
+		  
+		  <!-- 
+		  ${status.current} : 현재 아이템
+		  ${status.begin} : 시작 값
+		  ${status.end} : 끝 값
+		  ${status.step} : 증가 값
+		   -->
+		  
+		  
+		  
 	</body>
 </html>
