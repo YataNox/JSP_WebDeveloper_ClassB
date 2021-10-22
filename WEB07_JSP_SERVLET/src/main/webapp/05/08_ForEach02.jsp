@@ -51,7 +51,7 @@
 		  <!-- 마지막 아이테만 빼고 각 아이템 사이에 (,)컴마를 찍어 출력하고 싶을 때 -->
 		  <c:forEach var="movie" items="${movieList}" varStatus="status">
 		  	<%-- ${movie} --%> ${status.current}
-		  	<c:if test="${not status.last}"></c:if> 
+		  	<c:if test="${not status.last}">,</c:if> 
 		  </c:forEach>
 		  
 		  <!-- 
@@ -60,8 +60,6 @@
 		  ${status.end} : 끝 값
 		  ${status.step} : 증가 값
 		   -->
-		  
-		  
 		  
 	</body>
 </html>
