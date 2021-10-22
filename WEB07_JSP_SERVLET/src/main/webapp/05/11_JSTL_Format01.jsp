@@ -30,5 +30,7 @@
 			full : <fmt:formatDate value="${now}" type="both" dateStyle="full" timeStyle="full"/><br>
 		</h2>
 		
+		pattern="yyyy년 MM월 dd일 hh시 mm분 ss초" :
+		 <fmt:formatDate value="${now}" pattern="yyyy년 MM월 dd일 hh시 mm분 ss초"/><br>
 	</body>
 </html>
