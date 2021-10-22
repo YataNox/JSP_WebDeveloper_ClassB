@@ -22,5 +22,22 @@
 			<c:set var="now" value="<%=new java.util.Date()%>"></c:set>
 			날짜 : <fmt:formatDate value="${now}"></fmt:formatDate>
 		</h3>
+		
+		<fmt:setLocale value="ja_JP"></fmt:setLocale>
+		<h3>로케일을 일본어로 설정 후 로케일 확인 : <%=response.getLocale() %><br>
+			통화(currency) :
+			<fmt:formatNumber value="10000" type="currency"></fmt:formatNumber><br>
+			날짜 : <fmt:formatDate value="${now}"></fmt:formatDate>
+		</h3>
+		
+		<fmt:setLocale value="en_US"></fmt:setLocale>
+		<h3>로케일을 영어로 설정 후 로케일 확인 : <%=response.getLocale() %><br>
+			통화(currency) :
+			<fmt:formatNumber value="10000" type="currency"></fmt:formatNumber><br>
+			날짜 : <fmt:formatDate value="${now}"></fmt:formatDate>
+		</h3>
+		
+		<fmt:requestEncoding value="UTF-8"></fmt:requestEncoding>
+		<%-- <% request.setCharacterEncoding("UTF-8") %> --%>
 	</body>
 </html>
