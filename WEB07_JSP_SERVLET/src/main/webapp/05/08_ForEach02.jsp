@@ -29,5 +29,23 @@
 		${status.count} : 1부터 시작한 반복의 현재 아이템
 		${status.index} : 0부터 시작한 반복의 현재 아이템
 		 -->
+		 
+		 <!-- 반복실행문으로 리스트 작성 -->
+		 <ul>
+		 	<c:forEach var="movie" items="${movieList}" varStatus="status">
+		 		<c:choose>
+		 			<c:when test="${status.first}"> <!-- 목록의 첫 번째만 빨간색으로 작성 -->
+		 				<li style="font-weight:bold; color:red;">${movie }</li>
+		 			</c:when>
+		 			<c:otherwise>
+		 				<li>${movie }</li>
+		 			</c:otherwise>
+		 		</c:choose>
+		 	</c:forEach>
+		 </ul>
+		 <!-- 
+		 ${status.first} : 현재 루프가 처음이면 true 리턴
+		 ${status.last} : 현재 루프가 마지막이면 true 리턴
+		  -->
 	</body>
 </html>
